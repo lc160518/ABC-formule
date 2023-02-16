@@ -1,6 +1,21 @@
 import math
 
 done = False
+ABC = []
+
+
+def ask_input():
+    a = input("a= ")
+    b = input("b= ")
+    c = input("c= ")
+
+    ABC.append(a)
+    ABC.append(b)
+    ABC.append(c)
+
+
+def convert_input(a, b, c):
+    a = 1
 
 
 def positive_x(a, b, c):
@@ -14,12 +29,13 @@ def negative_x(a, b, c):
 
 
 while not done:
-    a = int(input("a= "))
-    b = int(input("b= "))
-    c = int(input("c= "))
+    ask_input()
 
+    a = ABC[0]
+    b = ABC[1]
+    c = ABC[2]
+
+    # convert_input(a, b, c)
     positive_x(a, b, c)
     negative_x(a, b, c)
     print("")
-
-
