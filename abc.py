@@ -13,10 +13,20 @@ def ask_input():
     ABC.append(b)
     ABC.append(c)
 
+    convert_input(a, b, c)
+
 
 def convert_input(a, b, c):
-    a = 1
 
+    for i in range(0, len(ABC)):
+        if "," ABC[i]
+
+    a = int(a)
+    b = int(b)
+    c = int(c)
+
+    positive_x(a, b, c)
+    negative_x(a, b, c)
 
 def positive_x(a, b, c):
     ans1 = (-1 * b + math.sqrt(b ** 2 - 4 * a * c)) / 2 * a
@@ -30,12 +40,4 @@ def negative_x(a, b, c):
 
 while not done:
     ask_input()
-
-    a = ABC[0]
-    b = ABC[1]
-    c = ABC[2]
-
-    # convert_input(a, b, c)
-    positive_x(a, b, c)
-    negative_x(a, b, c)
     print("")
